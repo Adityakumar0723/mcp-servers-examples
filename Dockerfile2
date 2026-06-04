@@ -12,7 +12,7 @@ RUN npm ci --ignore-scripts
 COPY . .
 
 # 4) Compile TypeScript into dist/
-RUN npx tsc
+RUN px tsc
 
 # 5) Mark compiled JS as executable
 RUN chmod +x dist/*.js
