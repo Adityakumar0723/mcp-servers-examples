@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json tsconfig.json ./
 
 # 2) Install all deps without running lifecycle scripts
-RUN pm ci --ignore-scripts
+RUN npm ci --ignore-scripts
 
 # 3) Copy the rest of your source files
 COPY . .
